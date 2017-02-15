@@ -5,7 +5,7 @@ my_tree_five <- rpart(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare + Emb
                       data = train_new, method = "class")
 
 # Visualize my_tree_five
-fancyRpartPlot(my_tree_five)
+
 
 # Make prediction
 my_prediction <- predict(my_tree_five, test_new, type = "class")
